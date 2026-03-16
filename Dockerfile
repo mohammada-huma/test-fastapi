@@ -3,6 +3,8 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
+mammad nabudi bebini
+
 WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
