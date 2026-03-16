@@ -11,6 +11,7 @@ services:
   - name: server
     type: container
     build:
+      repo: https://github.com/mohammada-huma/test-fastapi
       branch: main
       dockerfile: Dockerfile
       context: .
