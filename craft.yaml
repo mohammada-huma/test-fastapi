@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+
+workspace:
+  id: 52
+  project: server-1-project
+
+services:
+  - name: server
+    type: container
+    build:
+      branch: main
+      dockerfile: Dockerfile
+      context: .
+    ingress:
+      host: mo-test-1789.sbx.huma.com
+      paths: ["/"]
+      port: 80
